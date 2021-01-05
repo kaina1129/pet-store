@@ -1,0 +1,31 @@
+@import 'src/styles/variables.scss';
+
+.tab-container {
+	display: flex;
+	margin-top: 10px;
+
+	.ant-tabs {
+		width: 100%;
+	}
+
+	.ant-tabs-tab {
+		color: $primary-blue;
+	}
+
+	.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+	.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+		background-color: $background-blue;
+	}
+
+	.add-tab {
+		height: 40px;
+		align-items: center;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		svg {
+			color: $primary-blue;
+		}
+	}
+}

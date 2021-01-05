@@ -1,0 +1,12 @@
+@import 'src/styles/variables.scss';
+
+.table-view-container {
+	.ant-table-thead > tr > th {
+		color: $primary-blue;
+		background: #edeffd;
+	}
+
+	.ant-table-cell {
+		color: $primary-blue;
+	}
+}

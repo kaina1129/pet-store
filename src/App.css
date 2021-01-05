@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+	/* overflow: hidden; */
+}
+
+.pet-store-content {
+	padding: 8px 20px;
+}
