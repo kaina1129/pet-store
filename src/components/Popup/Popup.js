@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Modal } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
 
-import Button from '../Button/Button.js';
 import PetInfoForm from '../PetInfoForm/PetInfoForm.js';
 
 import './Popup.scss';
 
-const Popup = ({ allPetsData, columns, setAllPetsData, currentPet }) => {
-	const [visible, setVisible] = useState(false);
-
-	const toggleVisible = () => {
-		setVisible(!visible);
-	};
-
+const Popup = ({
+	allPetsData,
+	columns,
+	setAllPetsData,
+	currentPet,
+	visible,
+	setVisible,
+	toggleVisible,
+}) => {
 	return (
 		<div className='popup-container'>
-			<Button onClick={toggleVisible}>
-				Add New Pet <PlusOutlined />
-			</Button>
-
 			<Modal
 				visible={visible}
 				onOk={toggleVisible}
